@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de tutorías</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de tutorías</h1>
+    <p>Gestión del profesor</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Publicar un horario</h2>
+      <form id="formulario">
+        <label for="dia">Día</label>
+        <select id="dia">
+          <option>Lunes</option>
+          <option>Martes</option>
+          <option>Miércoles</option>
+          <option>Jueves</option>
+          <option>Viernes</option>
+        </select>
+
+        <label for="inicio">Hora de inicio</label>
+        <input type="time" id="inicio" required>
+
+        <label for="fin">Hora de fin</label>
+        <input type="time" id="fin" required>
+
+        <button type="submit">Guardar horario</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Horarios disponibles para los alumnos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Inicio</th>
+            <th>Fin</th>
+          </tr>
+        </thead>
+        <tbody id="horarios">
+          <tr>
+            <td>Martes</td>
+            <td>11:00</td>
+            <td>12:00</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button">Editar</button>
+      <button type="button">Eliminar</button>
+    </section>
+
+    <section>
+      <h2>Tutorías reservadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Alumno</th>
+            <th>Comentario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12/10/2026</td>
+            <td>10:00 - 10:30</td>
+            <td>Antonio Perez</td>
+            <td>Dudas sobre el último ejercicio</td>
+          </tr>
+          <tr>
+            <td>13/10/2026</td>
+            <td>11:30 - 12:00</td>
+            <td>Fernando Morales</td>
+            <td>Repasar etiquetas HTML</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
