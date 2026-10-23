@@ -69,3 +69,39 @@ th,td {
 th {
   background-color: #e5e5e5;
 }
+
+/* Enlace para cerrar sesión */
+.salir {
+  display: inline-block;
+  margin-top: 8px;
+  color: white;
+  font-size: 14px;
+}
+ 
+/* Pantalla de inicio: selección de rol */
+.roles {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+ 
+.rol {
+  flex: 1;
+  min-width: 250px;
+  padding: 18px;
+  border: 1px solid #cccccc;
+  background-color: #f8f8f8;
+  color: #222222;
+  text-decoration: none;
+}
+ 
+.rol:hover {
+  border-color: #245c4a;
+  background-color: #eef5f2;
+}
+ 
+.rol h3 {
+  margin-top: 0;
+  color: #245c4a;
+}

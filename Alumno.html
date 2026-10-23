@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de tutorías - Alumno</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de tutorías</h1>
+    <p>Gestión del alumno</p>
+    <a class="salir" href="index.html">Cerrar sesión</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Horarios disponibles del profesor</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Inicio</th>
+            <th>Fin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Martes</td>
+            <td>11:00</td>
+            <td>12:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Reservar una tutoría</h2>
+      <form id="formulario-reserva">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora-inicio">Hora de inicio</label>
+        <input type="time" id="hora-inicio" required>
+
+        <label for="hora-fin">Hora de fin</label>
+        <input type="time" id="hora-fin" required>
+
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" rows="3" placeholder="Indica el motivo de la tutoría"></textarea>
+
+        <button type="submit">Reservar tutoría</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Mis tutorías reservadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Comentario</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="mis-reservas">
+          <tr>
+            <td>12/10/2026</td>
+            <td>10:00 - 10:30</td>
+            <td>Dudas sobre el último ejercicio</td>
+            <td><button type="button">Cancelar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
